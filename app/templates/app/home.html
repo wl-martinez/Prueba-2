@@ -1,24 +1,42 @@
-{% extends "app/index.html" %}
-{% load static %}
-{% block container %}
- <!-- Vertical nav -->
- <div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Cosa 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Cosa 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Cosa 3</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-9">
-      </div>
+{% extends "app/index.html" %} {% load static %} {% block container %}
+<!-- Vertical nav -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Guitarras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Discos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Parlantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Teclados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Baterias</a>
+        </li>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Buscar..">
+        </form>
+      </ul>
     </div>
+    <div class="container-fluid col-sm-10">
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>      
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>      
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+      <a href=""><img class="guitarra" src="{% static 'app/img/guitarra.jpg' %}"/></a>
+    </div>
+    </div>
+    
   </div>
+</div>
 {% endblock %}

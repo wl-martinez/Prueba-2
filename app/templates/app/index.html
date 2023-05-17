@@ -15,6 +15,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Boxicons -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Volkhov&display=swap" rel="stylesheet">
 </head>
 <style> 
   body { 
@@ -24,7 +28,7 @@
     background-color: #B799FF;
   }
   .footer{
-    background-color: #B799FF
+    background-color: #B799FF;
   }
 </style>
   <!-- Navbar -->
@@ -34,13 +38,13 @@
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item ms-auto">
-            <a class="nav-link text-dark" href="#">Crea tu cuenta</a>
+            <a class="nav-link" href="#" style="color: #E6FFFD;">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Ingresa</a>
+            <a class="nav-link" href="{% url 'login'  %}" style="color: #E6FFFD;">Ingresa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><box-icon name='cart'></box-icon></a>
+            <a class="nav-link" href="#"><box-icon name='cart' animation='tada-hover' color='#e6fffd'></box-icon></a>
           </li>
         </ul>
       </div>

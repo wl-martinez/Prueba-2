@@ -1,85 +1,95 @@
 {% extends "app/index.html" %} {% load static %} {% block container %}
 <style>
-  h1
-{
-  text-align: center;
-  font-family: arial;
-  font-size: 3em;
-  color: rgba(0,0,0,0.75);
-  font-style: italic;
-}
-h2 {text-align: center;}
+  h1 {
+    text-align: center;
+    font-family: arial;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.75);
+    font-style: italic;
+  }
 
-#slideshowElement
-{
-  background-color: none;
-  /* to change the overall size and alignment of this carousel object, define appropriate css here. the carousel interface elements such as navigation buttons and bullets align based on the size and alignment of this element */
-  border-radius: 30px;
-}
+  h2 {
+    text-align: center;
+  }
 
-.carousel-cell
-{
-  width: 100%; /* full width */
-  height: 600px;
-  background: cornsilk;
-  /* center images in cells with flexbox */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #slideshowElement {
+    background-color: none;
+    /* to change the overall size and alignment of this carousel object, define appropriate css here. the carousel interface elements such as navigation buttons and bullets align based on the size and alignment of this element */
+    border-radius: 30px;
+    margin-top: 30px;
+  }
 
-.carousel.is-fullscreen .carousel-cell
-{
-  height: 100%;
-}
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: 600px;
+    background: #e6fffd;
+    /* center images in cells with flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.carousel-cell img
-{
-  display: block;
-  max-height: 100%;
-}
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+
+  .carousel-cell img {
+    display: block;
+    max-height: 100%;
+  }
+  .nav-link {
+    font-family: "Bruno Ace SC", cursive;
+    font-family: "Volkhov", serif;
+    color: #acbcff;
+  }
 </style>
-<body style="background-color: cornsilk; text-align:center">
-
+<body style="background-color: #e6fffd;">
   <!-- this is the main flickity javascript library -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  
+
   <!-- this is an extra flickity library for fullscreen viewing -->
   <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
-  
+
   <!-- this is the main flickity css external stylesheet -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+  />
+
   <!-- this is an extra flickity css stylesheet for fullscreen viewing -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
-  
-  
-  <a href="https://codepen.io/leanceloot/pen/GRxLWZr?editors=1000"><h1>puppies.com</h1>
-  </a>
-  
-  <h2>Lancelot</h2>
-  
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css"
+  />
+
   <!-- START code block for the example slideshow element -->
-  <div id=slideshowElement class="carousel" data-flickity="{ &quot;fullscreen&quot;: true,&quot;wrapAround&quot;: true }">
-  
-     <div class="carousel-cell">
-        <img       src="https://thehappypuppysite.com/wp-content/uploads/2015/10/0001-79194901.jpg" style="width:70%;">
-         <br>
-  English Springer  
-      </div>
-      <div class="carousel-cell">
-        <img src=https://media-be.chewy.com/wp-content/uploads/2021/06/02112758/Cavalier-King-Charles-Spaniel-FeaturedImage-1024x615.jpg style="width: 70%">
-        <br>
-  King-Charles 
-      </div>
-      <div class="carousel-cell">
-         <img src=https://media-be.chewy.com/wp-content/uploads/2021/05/17084547/Bernese-Mountain-Dog-FeaturedImage-1024x615.jpg style="width: 70%">
-        <br>
-  Bernese-Mountain
-      </div>
+  <div
+    id="slideshowElement"
+    class="carousel"
+    data-flickity='{ "fullscreen": true,"wrapAround": true }'
+  >
+    <div class="carousel-cell">
+      <img
+        src="{% static 'app/img/grafico2.jpg' %}"
+        style="width: 70%"
+      />
       
+    </div>
+    <div class="carousel-cell">
+      <img
+      src="{% static 'app/img/nosotros.jpg' %}"
+      style="width: 70%">
+      
+    </div>
+    <div class="carousel-cell">
+      <img
+      src="{% static 'app/img/grafico1.jpg' %}"
+      style="width: 70%">
+     
+    </div>
   </div>
   <!-- END code block for the example slideshow element -->
-  
-{% endblock %}
+
+  {% endblock %}
+</body>

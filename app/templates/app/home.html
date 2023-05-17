@@ -20,6 +20,10 @@
     font-family: 'Volkhov', serif;
     color: #ACBCFF;
 }
+ .valor{
+    width: 40px;
+    margin-top: 5px;
+ }
 
 .objeto{
   width: 50%;
@@ -39,8 +43,8 @@
    line-height:22px;
    padding:15px;
    border-radius:5px;
-   background:#ffffff;
-   border:1px solid #f7be68;
+   background:#E6FFFD;
+   border:1px solid #ACBCFF;
    box-shadow:5px 5px 10px 0px rgba(0,0,0,0.22);
 }
 
@@ -76,13 +80,14 @@
    position:absolute;
    top:-4px;
    right:-4px;
-   color: #fff;
+   color: #E6FFFD;
    border-radius:2px;
-   background:#f7be68;
+   background:#B799FF;
    padding:10px;
    font-size: 30px;
    text-decoration: none;
 }
+
 </style>
 <!-- Vertical nav -->
 <div class="container mt-5">
@@ -117,99 +122,44 @@
             <a href="#cerrar"></a>
               <div id="modalContent">
                 <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Guitarra</h1>
-                 <p style="text-align:center;">Contenido</p>
-                 <img class="objeto" src="{% static 'app/img/guitarra.jpg' %}" alt="">
+                 <h1 style="color: #ACBCFF; text-align:center;">Guitarra</h1>
+                 <div class="container-fluid">
+                  <div class="row">
+                 <img class="objeto col-sm-6" src="{% static 'app/img/guitarra.jpg' %}" alt="">
+                 <div class="col-sm-6" style="color: #ACBCFF;">
+                    <h3>Precio: $25,000</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nobis dolore minima deserunt officiis natus minus amet tenetur facere nesciunt blanditiis laborum nisi aspernatur, est ratione delectus ullam nemo porro.</h4>
+                    <button type="button" class="btn btn-success btn-block" style="background-color: #B799FF;" >Agregar</button>
+                    <input type="text" class="valor form-control" value="1">
+                 </div>
+                </div>
+                 </div>
               </div>
           </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
-          <div id="modal">
-            <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #f7be68; text-align:center;">Políticas de privacidad</h1>
-                 <p style="text-align:center;">Contenido</p>
-              </div>
-          </div>
         </div>
       </div>
     </div>

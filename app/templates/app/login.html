@@ -2,7 +2,9 @@
 <style>
   .brand_logo {
     width: 150px;
-    border: 2px solid #aee2ff;
+    height: 150px;
+    border: 2px solid #acbcff;
+    border-radius: 50%;
   }
   .user_card {
     height: 400px;
@@ -37,10 +39,14 @@
     margin-top: 100px;
   }
 
+  .btn:hover {
+    background-color: #b799ff;
+  }
+
   .login_btn {
     width: 100%;
-    background: var(--secundario) !important;
-    color: white !important;
+    background: #acbcff;
+    color: #e6fffd;
   }
 
   .login_btn:focus {
@@ -53,7 +59,7 @@
   }
 
   .input-group-text {
-    background: var(--secundario) !important;
+    background: #acbcff;
     color: white !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;
@@ -68,7 +74,15 @@
   .custom-checkbox
     .custom-control-input:checked
     ~ .custom-control-label::before {
-    background-color: var(--secundario) !important;
+    background-color: #acbcff;
+  }
+
+  .ml-2{
+    color: #ACBCFF;
+  }
+
+  .ml-2:hover{
+    color: #B799FF;
   }
 </style>
 <div class="container p-5 my-5">
@@ -86,7 +100,7 @@
               <div class="input-group mb-3">
                 <div class="input-group-append">
                   <span class="input-group-text"
-                    ><i class="fas fa-user"></i
+                    ><box-icon name="user-circle" color="#e6fffd"></box-icon
                   ></span>
                 </div>
                 <input
@@ -100,7 +114,7 @@
               <div class="input-group mb-2">
                 <div class="input-group-append">
                   <span class="input-group-text"
-                    ><i class="fas fa-key"></i
+                    ><box-icon name="lock-alt" color="#e6fffd"></box-icon
                   ></span>
                 </div>
                 <input
@@ -123,7 +137,7 @@
                   >
                 </div>
               </div>
-              <div class="d-flex justify-content-center mt-3 login_container">
+              <div class="d-flex justify-content-center mt-3">
                 <button type="button" name="button" class="btn login_btn">
                   Login
                 </button>
@@ -133,9 +147,7 @@
 
           <div class="mt-4">
             <div class="d-flex justify-content-center links">
-              <a href="/registro.html" class="ml-2 text-warning"
-                >Crea una cuenta aqui</a
-              >
+              <a  href="{% url 'registro'  %}" class="ml-2">Crea una cuenta aqui</a>
             </div>
           </div>
         </div>

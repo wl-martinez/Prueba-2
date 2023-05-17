@@ -44,7 +44,7 @@
             <a class="nav-link" href="{% url 'login'  %}" style="color: #E6FFFD;">Ingresa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><box-icon name='cart' animation='tada-hover' color='#e6fffd'></box-icon></a>
+            <a class="nav-link" href="{% url 'carro'  %}"><box-icon name='cart' animation='tada-hover' color='#e6fffd'></box-icon></a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
   {% endblock container %}
 
   <div class="footer mt-5 p-4 text-center">
-    <p>Footer</p>
+    <a class="nav-link" href="{% url 'nosotros'  %}" style="color: #E6FFFD;">Nosotros</a>
   </div>
 </body>
 

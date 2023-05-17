@@ -1,0 +1,93 @@
+{% extends "app/index.html" %} {% load static %} {% block container %}
+<style>
+  .img-responsive {
+    width: 20%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  h5 {
+    font-family: "Bruno Ace SC", cursive;
+    font-family: "Volkhov", serif;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #acbcff;
+  }
+  .btn {
+    background-color: #acbcff;
+  }
+  .btn:hover {
+    background-color: #b799ff;
+  }
+  .boton {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    right: 90px;
+    position: absolute;
+  }
+  .total{
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+</style>
+<div class="container">
+  <div class="panel-info">
+    <div class="panel-heading">
+      <div class="panel-title">
+        <div class="carro">
+          <h5>Carro de Compras</h5>
+        </div>
+        <div class="boton">
+          <button type="button" class="btn btn-sm btn-block">
+            <a style="color: #e6fffd">Continuar Comprando</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="producto">
+        <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
+      </div>
+      <div class="tipo-p">
+        <h4 class="product-name"><strong>Nombre Producto</strong></h4>
+      </div>
+      <div class="precio-p">
+        <div class="text-right">
+            <strong>25.00 <span class="text-muted">x</span></strong>
+            <div class="contador">
+                <input type="text" class="form-control input-sm" value="1">
+            </div>
+        </div>
+      </div>
+      <div class="producto">
+        <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
+      </div>
+      <div class="tipo-p">
+        <h4 class="product-name"><strong>Nombre Producto</strong></h4>
+      </div>
+      <div class="precio-p">
+        <div class="text-right">
+            <strong>25.00 <span class="text-muted">x</span></strong>
+            <div class="contador">
+                <input type="text" class="form-control input-sm" value="1">
+            </div>
+        </div>
+      </div>
+</div>
+<div class="panel-footer">
+    <div class="text-center">
+        <div class="total">
+            <h4 class="text-right">Total <strong>$50.00</strong></h4>
+        </div>
+        <div class="compra">
+            <button type="button" class="btn btn-success btn-block">
+                Comprar
+            </button>
+        </div>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

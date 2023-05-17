@@ -10,3 +10,9 @@ def login(request):
 
 def registro(request):
     return render(request,'app/registro.html')
+
+def nosotros(request):
+    return render(request,'app/nosotros.html')
+
+def carro(request):
+    return render(request,'app/carro.html')

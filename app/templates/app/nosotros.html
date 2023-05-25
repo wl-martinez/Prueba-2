@@ -20,7 +20,8 @@
   }
 
   .carousel-cell {
-    width: 100%; /* full width */
+    width: 100%;
+    /* full width */
     height: 600px;
     background: #e6fffd;
     /* center images in cells with flexbox */
@@ -38,13 +39,15 @@
     display: block;
     max-height: 100%;
   }
+
   .nav-link {
     font-family: "Bruno Ace SC", cursive;
     font-family: "Volkhov", serif;
     color: #acbcff;
   }
 </style>
-<body style="background-color: #e6fffd;">
+
+<body style="background-color: #e6fffd">
   <!-- this is the main flickity javascript library -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
@@ -52,41 +55,21 @@
   <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 
   <!-- this is the main flickity css external stylesheet -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 
   <!-- this is an extra flickity css stylesheet for fullscreen viewing -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css" />
 
   <!-- START code block for the example slideshow element -->
-  <div
-    id="slideshowElement"
-    class="carousel"
-    data-flickity='{ "fullscreen": true,"wrapAround": true }'
-  >
+  <div id="slideshowElement" class="carousel" data-flickity='{ "fullscreen": true,"wrapAround": true }'>
     <div class="carousel-cell">
-      <img
-        src="{% static 'app/img/grafico2.jpg' %}"
-        style="width: 70%"
-      />
-      
+      <img src="{% static 'app/img/grafico2.jpg' %}" style="width: 70%" />
     </div>
     <div class="carousel-cell">
-      <img
-      src="{% static 'app/img/nosotros.jpg' %}"
-      style="width: 70%">
-      
+      <img src="{% static 'app/img/nosotros.jpg' %}" style="width: 70%" />
     </div>
     <div class="carousel-cell">
-      <img
-      src="{% static 'app/img/grafico1.jpg' %}"
-      style="width: 70%">
-     
+      <img src="{% static 'app/img/grafico1.jpg' %}" style="width: 70%" />
     </div>
   </div>
   <!-- END code block for the example slideshow element -->

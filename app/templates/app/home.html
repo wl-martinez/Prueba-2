@@ -1,93 +1,99 @@
 {% extends "app/index.html" %} {% load static %} {% block container %}
 <style>
-  .guitarra{
+  .guitarra {
     border: 3px solid #ACBCFF;
     transition: transform .2s;
-    }
-    .guitarra:hover{
-      transform: scale(1.1);
-    }
-  .nav-item{
+  }
+
+  .guitarra:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-item {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .d-flex{
+
+  .d-flex {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .nav-link {
     font-family: 'Bruno Ace SC', cursive;
     font-family: 'Volkhov', serif;
     color: #ACBCFF;
-}
- .valor{
+  }
+
+  .valor {
     width: 40px;
     margin-top: 5px;
- }
+  }
 
-.objeto{
-  width: 50%;
-}
-  .nav-link:hover{
+  .objeto {
+    width: 50%;
+  }
+
+  .nav-link:hover {
     color: #B799FF;
-}
-#modalContent{
-   position:absolute;
-   top:30%;
-   left:35%;
-   z-index:6;
-   float:left;
-   margin:-2% 0px 0px -150px;
-   width:700px;
-   color:#888888;
-   line-height:22px;
-   padding:15px;
-   border-radius:5px;
-   background:#E6FFFD;
-   border:1px solid #ACBCFF;
-   box-shadow:5px 5px 10px 0px rgba(0,0,0,0.22);
-}
+  }
 
-#modal{
-   position:fixed;
-   top:0px;
-   left:0px;
-   z-index:5;
-   float:left;
-   width:100%;
-   height:100%;
-   background:rgba(0,0,0,0.2);
-   display:none;
-   opacity:0;
-}
+  #modalContent {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 6;
+    float: left;
+    margin: -2% 0px 0px -150px;
+    width: 700px;
+    color: #888888;
+    line-height: 22px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #E6FFFD;
+    border: 1px solid #ACBCFF;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.22);
+  }
 
-#modal > a{
-   position:fixed;
-   top:0px;
-   left:0px;
-   z-index:1;
-   float:left;
-   width:100%;
-   height:100%;
-}
+  #modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    opacity: 0;
+  }
 
-:target{
-   display:block!important;
-   opacity:1!important;
-}
+  #modal>a {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
 
-#modalContent > a{
-   position:absolute;
-   top:-4px;
-   right:-4px;
-   color: #E6FFFD;
-   border-radius:2px;
-   background:#B799FF;
-   padding:10px;
-   font-size: 30px;
-   text-decoration: none;
-}
+  :target {
+    display: block !important;
+    opacity: 1 !important;
+  }
 
+  #modalContent>a {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    color: #E6FFFD;
+    border-radius: 2px;
+    background: #B799FF;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+  }
 </style>
 <!-- Vertical nav -->
 <div class="container mt-5">
@@ -117,54 +123,57 @@
     <div class="container-fluid col-sm-10">
       <div class="row">
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
           <div id="modal">
             <a href="#cerrar"></a>
-              <div id="modalContent">
-                <a href="#cerrar">X</a>
-                 <h1 style="color: #ACBCFF; text-align:center;">Guitarra</h1>
-                 <div class="container-fluid">
-                  <div class="row">
-                 <img class="objeto col-sm-6" src="{% static 'app/img/guitarra.jpg' %}" alt="">
-                 <div class="col-sm-6" style="color: #ACBCFF;">
+            <div id="modalContent">
+              <a href="#cerrar">X</a>
+              <h1 style="color: #ACBCFF; text-align:center;">Guitarra</h1>
+              <div class="container-fluid">
+                <div class="row">
+                  <img class="objeto col-sm-6" src="{% static 'app/img/guitarra.jpg' %}" alt="">
+                  <div class="col-sm-6" style="color: #ACBCFF;">
                     <h3>Precio: $25,000</h3>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nobis dolore minima deserunt officiis natus minus amet tenetur facere nesciunt blanditiis laborum nisi aspernatur, est ratione delectus ullam nemo porro.</h4>
-                    <button type="button" class="btn btn-success btn-block" style="background-color: #B799FF;" >Agregar</button>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nobis dolore minima deserunt
+                      officiis natus minus amet tenetur facere nesciunt blanditiis laborum nisi aspernatur, est ratione
+                      delectus ullam nemo porro.</h4>
+                    <button type="button" class="btn btn-success btn-block"
+                      style="background-color: #B799FF;">Agregar</button>
                     <input type="text" class="valor form-control" value="1">
-                 </div>
+                  </div>
                 </div>
-                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
         <div class="col-sm-4">
-          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}"/></a>   
+          <a href="#modal"><img class="guitarra rounded" src="{% static 'app/img/guitarra.jpg' %}" /></a>
         </div>
       </div>
     </div>
-    </div>
-    
   </div>
+
+</div>
 </div>
 {% endblock %}

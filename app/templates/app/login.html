@@ -6,11 +6,13 @@
     border: 2px solid #acbcff;
     border-radius: 50%;
   }
+
   .nav-link {
     font-family: 'Bruno Ace SC', cursive;
     font-family: 'Volkhov', serif;
     color: #ACBCFF;
-}
+  }
+
   .user_card {
     height: 400px;
     width: 350px;
@@ -40,6 +42,7 @@
     padding: 10px;
     text-align: center;
   }
+
   .form_container {
     margin-top: 100px;
   }
@@ -76,17 +79,15 @@
     outline: 0px !important;
   }
 
-  .custom-checkbox
-    .custom-control-input:checked
-    ~ .custom-control-label::before {
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #acbcff;
   }
 
-  .ml-2{
+  .ml-2 {
     color: #ACBCFF;
   }
 
-  .ml-2:hover{
+  .ml-2:hover {
     color: #B799FF;
   }
 </style>
@@ -104,42 +105,20 @@
             <form>
               <div class="input-group mb-3">
                 <div class="input-group-append">
-                  <span class="input-group-text"
-                    ><box-icon name="user-circle" color="#e6fffd"></box-icon
-                  ></span>
+                  <span class="input-group-text"><box-icon name="user-circle" color="#e6fffd"></box-icon></span>
                 </div>
-                <input
-                  type="text"
-                  name=""
-                  class="form-control input_user"
-                  value=""
-                  placeholder="username"
-                />
+                <input type="text" name="" class="form-control input_user" value="" placeholder="username" />
               </div>
               <div class="input-group mb-2">
                 <div class="input-group-append">
-                  <span class="input-group-text"
-                    ><box-icon name="lock-alt" color="#e6fffd"></box-icon
-                  ></span>
+                  <span class="input-group-text"><box-icon name="lock-alt" color="#e6fffd"></box-icon></span>
                 </div>
-                <input
-                  type="password"
-                  name=""
-                  class="form-control input_pass"
-                  value=""
-                  placeholder="password"
-                />
+                <input type="password" name="" class="form-control input_pass" value="" placeholder="password" />
               </div>
               <div class="form-group">
                 <div class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="customControlInline"
-                  />
-                  <label class="custom-control-label" for="customControlInline"
-                    >Remember me</label
-                  >
+                  <input type="checkbox" class="custom-control-input" id="customControlInline" />
+                  <label class="custom-control-label" for="customControlInline">Remember me</label>
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3">
@@ -152,7 +131,7 @@
 
           <div class="mt-4">
             <div class="d-flex justify-content-center links">
-              <a  href="{% url 'registro'  %}" class="ml-2">¿No tiene una cuenta? Regístrese</a>
+              <a href="{% url 'registro'  %}" class="ml-2">¿No tiene una cuenta? Regístrese</a>
             </div>
           </div>
         </div>

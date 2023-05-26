@@ -28,9 +28,6 @@
     color: #acbcff;
   }
 
-  strong {
-    color: #acbcff;
-  }
 
   .btn {
     background-color: #acbcff;
@@ -41,10 +38,7 @@
   }
 
   .boton {
-    margin-bottom: 30px;
-    margin-top: 30px;
-    right: 90px;
-    position: absolute;
+    float: right;
   }
 
   .total {
@@ -53,8 +47,8 @@
   }
 
   .contador {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    
   }
 </style>
 <div class="container">
@@ -73,47 +67,51 @@
     </div>
     <div class="panel-body">
       <div class="producto">
-        <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
-      </div>
-      <div class="tipo-p">
-        <h4 class="product-name"><strong>Nombre Producto</strong></h4>
-      </div>
-      <div class="precio-p">
-        <div class="text-right">
-          <strong>25,000 <span class="text-muted">x</span></strong>
-          <div class="contador">
-            <input type="text" class="form-control input-sm" value="1">
-          </div>
+        <div class="imagen-producto">
+          <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
+        </div>
+        <div class="tipo-producto">
+          <h4><strong>Nombre Producto</strong></h4>
+        </div>
+        <div class="precio-producto">
+          50.000</div>
+            <div class="contador">
+              <input type="number" id="numero" value="1" min="1">
+            </div>
         </div>
       </div>
       <div class="producto">
-        <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
+        <div class="imagen-producto">
+          <img class="img-responsive" src="{% static 'app/img/logo.jpg' %}" />
+        </div>
+        <div class="tipo-producto">
+          <h4><strong>Nombre Producto</strong></h4>
+        </div>
+        <div class="precio-producto">
+          50.000</div>
+            <div class="contador">
+              <input type="number" id="numero" value="1" min="1">
+            </div>
+        </div>
       </div>
-      <div class="tipo-p">
-        <h4 class="product-name"><strong>Nombre Producto</strong></h4>
-      </div>
-      <div class="precio-p">
-        <div class="text-right">
-          <strong>25,000 <span class="text-muted">x</span></strong>
-          <div class="contador">
-            <input type="text" class="form-control input-sm" value="1">
+      <div class="panel-footer">
+        <div class="text-center">
+          <div class="total">
+              <div class="totals-item">
+                <label>Total</label>
+                <div class="totals-value" id="cart-total">71.97</div>
+              </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="panel-footer">
-      <div class="text-center">
-        <div class="total">
-          <h4 class="text-right">Total <strong>$50,000</strong></h4>
-        </div>
-        <div class="compra">
-          <button type="button" class="btn btn-success btn-block">
-            Comprar
-          </button>
+          <div class="compra">
+            <button type="button" class="btn btn-success btn-block">
+              Comprar
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 </div>
+
 {% endblock %}
